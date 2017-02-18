@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_signup"
+    android:background="@color/colorPrimaryDark"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.saimohith.foodcart.signupActivity">
+
+    <TextView
+        android:text="Username:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="26dp"
+        android:id="@+id/textView10"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="Please Fill the Details "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:cursorVisible="false"
+        android:textColor="@color/colorPrimary"
+        android:singleLine="false"
+        android:phoneNumber="false"
+        android:id="@+id/RUsername"
+        android:layout_below="@+id/textView10"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Email id:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:id="@+id/textView11"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/RUsername"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_marginTop="6dp"
+        android:id="@+id/REmail"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/textView11"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Mobile Number:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:id="@+id/textView13"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/REmail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Password:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:id="@+id/textView14"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/RPhone"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_marginTop="9dp"
+        android:id="@+id/RPassword"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/textView14"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Retype password: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:id="@+id/textView15"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/RPassword"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_marginTop="7dp"
+        android:id="@+id/RPassword2"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/textView15"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:layout_marginTop="6dp"
+        android:id="@+id/RPhone"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/textView13"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RPassword2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp"
+        android:id="@+id/textView17"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="normal|bold" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:layout_below="@+id/textView17"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp"
+        android:id="@+id/RAddress"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="address including ZIP "
+        android:textColor="@color/colorPrimary" />
+
+    <Button
+        android:text="Register "
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Register"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:fontFamily="sans-serif-medium"
+        style="@android:style/Widget.Button"
+        android:onClick="onRegClick"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:layout_below="@+id/RAddress"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="cancel"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/login"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:fontFamily="sans-serif-medium"
+        style="@android:style/Widget.Button"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:layout_below="@+id/Register"
+        android:layout_alignLeft="@+id/Register"
+        android:layout_alignStart="@+id/Register" />
+
+
+</RelativeLayout>

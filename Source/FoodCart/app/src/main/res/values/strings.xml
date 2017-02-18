@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">FoodCart</string>
+    <string name="emptyString" />
+    <string name="emptyStr" />
+    <string name="emptystr" />
+</resources>
