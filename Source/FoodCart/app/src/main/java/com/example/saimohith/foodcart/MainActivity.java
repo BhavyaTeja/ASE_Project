@@ -1,4 +1,4 @@
-package com.example.saimohith.foodcart;
+package com.example.saimohith.homeapplication;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -15,18 +15,19 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class MainActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
+
 
     private EditText email;
     private EditText Password;
 
-    private FirebaseAuth   firebaseAuth;
+    private FirebaseAuth firebaseAuth;
     private ProgressDialog PD;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
 
 
         firebaseAuth = FirebaseAuth.getInstance();
@@ -36,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
             finish();
 
-            startActivity(new Intent(getApplicationContext(),VoiceRecogActivity.class));
+            startActivity(new Intent(getApplicationContext(),Home.class));
         }
 
         email = (EditText) findViewById(R.id.Lid);
@@ -82,8 +83,8 @@ public class MainActivity extends AppCompatActivity {
                         }*/
                         if (task.isSuccessful()) {
                             finish();
-                            Toast.makeText(MainActivity.this, "Login Success", Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                            Toast.makeText(LoginActivity.this, "Login Success", Toast.LENGTH_SHORT).show();
+                            startActivity(new Intent(getApplicationContext(), LoginActivity.class));
 
 
                         }
@@ -98,12 +99,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void RegButtonClick(View v){
 
-        Intent k = new Intent(MainActivity.this, signupActivity.class);
+        Intent k = new Intent(LoginActivity.this, signupActivity.class);
         startActivity(k);
     }
 
 
 }
+
 
 
 
