@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.saimohith.homeapplication.LoginActivity">
+
+    <TextView
+        android:text="Don't have an account ?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_above="@+id/Bsign"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="27dp"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="18sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/Password"
+        android:layout_above="@+id/Blogin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="21dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Password:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="22sp"
+        android:layout_above="@+id/Password"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="19dp"
+        android:textStyle="normal|bold" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/Lid"
+        android:layout_marginBottom="11dp"
+        android:layout_above="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Email id: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="22sp"
+        android:layout_above="@+id/Lid"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="12dp"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="Login Page  "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:text="Login "
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Blogin"
+        style="@android:style/Widget.Button"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:onClick="ButtonClick"
+        android:layout_marginBottom="40dp"
+        android:textStyle="normal|bold"
+        android:layout_above="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Register "
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
+        android:id="@+id/Bsign"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:fontFamily="sans-serif-medium"
+        style="@android:style/Widget.Button"
+        android:onClick="RegButtonClick"
+        android:textStyle="normal|bold"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/Blogin"
+        android:layout_alignStart="@+id/Blogin" />
+
+</RelativeLayout>
