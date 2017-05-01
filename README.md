@@ -17,7 +17,3 @@ The Following functionalities are implemented in the first increment.
 The Source code is attached in [Source Folder](https://github.com/BhavyaTeja/ASE_Project/tree/master/Source/FoodCart).
 
 The Wireframes, Screenshots, Burn down charts and the UML Diagrams are attached in [Documentation Folder](https://github.com/BhavyaTeja/ASE_Project/tree/master/Documentation).
-
-## [Click here to view the project increment 1 - report](https://github.com/BhavyaTeja/ASE_Project/blob/master/Documentation/ProjectIncrement_1_Team15.pdf)
-
-## [Click here to view the project increment 2 - report](https://github.com/BhavyaTeja/ASE_Project/blob/master/Documentation/ProjectIncrement2 - ASE.pdf.pdf)
